@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
   src: url(FONT/Graebenbach-Regular.otf);
   font-family: pixel
 }
@@ -90,4 +90,73 @@ img {
   padding-right: 200px;
   font-size: 20px;
 
+}
+
+#img1 {
+  padding-left: 40vw;
+  padding-right: 15vw;
+  padding-bottom: 10vh;
+}
+
+#img2 {
+  padding-top: 10vh;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  padding-bottom: 10vh;
+}
+
+#img3 {
+  padding-top: 10vh;
+  padding-left: 50vw;
+  padding-right: 15vw;
+  padding-bottom: 10vh;
+}
+
+#img4 {
+  padding-top: 10vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 10vh;
+}
+
+#img5 {
+  padding-top: 0vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  padding-bottom: 10vh;
+}
+
+#img6 {
+  padding-top: 0vh;
+  padding-left: 40vw;
+  padding-right: 15vw;
+  padding-bottom: 10vh;
+}
+
+#img7 {
+  padding-top: 0vh;
+  padding-left: 15vw;
+  padding-right: 50vw;
+  padding-bottom: 10vh;
+}
+
+#img8 {
+  padding-top: 0vh;
+  padding-left: 20vw;
+  padding-right: 15vw;
+  padding-bottom: 10vh;
+}
+
+#img9 {
+  padding-top: 0vh;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  padding-bottom: 10vh;
+}
+
+#img10 {
+  padding-top: 0vh;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  padding-bottom: 10vh;
 }
