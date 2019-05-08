@@ -5,6 +5,10 @@
     <title> America's Playground </title>
     <link rel="stylesheet" href="css/main.css">
   </head>
+
+
+
+
   <body>
 
 <div class="foreword">
@@ -29,15 +33,15 @@
 
 </div>
 
-<div class="image1">
+<div class="image2" id="img1">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 1.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/1.jpg" alt= "hello">
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img2">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 2.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/2.jpg" alt= "hello">
 
 </div>
 
@@ -47,21 +51,24 @@
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img3">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 3.jpg" alt= "hello">
-
-</div>
-
-<div class="image2">
-
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 4.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/3.jpg" alt= "hello">
 
 </div>
 
-<div class="image2">
+<div class="image3" id="img4">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 5.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/4.jpg" alt= "hello">
+
+</div>
+
+<div class="image2" id="img5">
+
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/5.jpg" alt= "hello">
+
+</div>
+
 
 <div class="poem1">
 
@@ -80,27 +87,27 @@
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img6">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 6.jpg" alt= "hello">
-
-</div>
-
-<div class="image2">
-
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 7.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/6.jpg" alt= "hello">
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img7">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 8.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/7.jpg" alt= "hello">
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img8">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 9.jpg" alt= "hello">
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/8.jpg" alt= "hello">
+
+</div>
+
+<div class="image2" id="img9">
+
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/9.jpg" alt= "hello">
 
 </div>
 
@@ -131,13 +138,59 @@
 
 </div>
 
-<div class="image2">
+<div class="image2" id="img10">
 
-<img src="/Users/johanverbeeck/Desktop/AAAAAASEMESTER 2/FINAL COPY/Artboard 10.jpg" alt= "hello">
-
-</div>
+<img src="/Users/johanverbeeck/Desktop/FINAL COPY/10.jpg" alt= "hello">
 
 </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(function() {
+
+                var documentEl = $(document),
+                    fadeElem = $('.image2');
+
+
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/1000);
+                    });
+                });
+
+            });
+
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(function() {
+
+                var documentEl = $(document),
+                    fadeElem = $('.image3');
+
+
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/2000);
+                    });
+                });
+
+            });
+
+        </script>
 
 
 </html>
+
