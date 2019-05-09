@@ -1,6 +1,6 @@
 @font-face {
-  src: url(Graebenbach-Regular.ttf);
-  font-family: pixel
+  src: url('Graebenbach-Regular.ttf') format('truetype');
+  font-family: pixel;
 }
 
 
