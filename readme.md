@@ -1,3 +1,3 @@
 ---
-permalink: /homepage.html
+permalink: /Homepage.html
 ---
